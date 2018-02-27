@@ -14,7 +14,7 @@ BEGIN {
     chomp($selinuxfs);
     $kernver = `cat $selinuxfs/policyvers`;
     if ( $modver >= 18 && $kernver >= 30 ) {
-        $test_xperms = 1;
+        $test_xperms = 0;
         $test_count += 2;
     }
 
